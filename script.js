@@ -1,3 +1,9 @@
 const menuOpenButton = document.querySelector("#menu-open-button")
+const menuCloseButton = document.querySelector("#menu-close-button")
 
-// min 21:31
+
+menuOpenButton.addEventListener("click", ()=>{
+    document.body.classList.toggle("show-mobile-menu");
+})
+
+menuCloseButton.addEventListener("click", ()=> menuOpenButton.click());
